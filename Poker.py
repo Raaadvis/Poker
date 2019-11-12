@@ -41,7 +41,7 @@ print(Table)
 
 Choice1 = input("Choose your action: Bet/Check/Fold - ")
 if Choice1 == "Check":
-  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 elif Choice1 == "Bet":
   betamount1 = int(input("Amount - "))
   betamount =  betamount1
@@ -52,10 +52,10 @@ elif Choice1 == "Bet":
   if betamount1 > Cash_player:
     print(f"\nYou can\'t bet more than you have, stupid face.\n{Line*50}")
   if betamount1 <= Cash_player:
-    print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+    print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 Choice2 = input("Choose your action: Bet/Check/Fold - ")
 if Choice2 == "Check":
-  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  {Turn}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  {Turn}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 elif Choice2 == "Bet":
   betamount2 = int(input("Amount - "))
   callamount = betamount2
@@ -66,10 +66,10 @@ elif Choice2 == "Bet":
   if betamount2 > Cash_player:
     print(f"\nYou can\'t bet more than you have, stupid face.\n{Line*50}")
   if betamount2 <= Cash_player:
-    print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  {Turn} \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+    print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  {Turn} \n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 Choice3 = input("Choose your action: Bet/Check/Fold - ")
 if Choice3 == "Check":
-  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  {Turn}  {River}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+  print(f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  {Turn}  {River}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 elif Choice3 == "Bet":
   betamount3 = int(input("Amount - "))
   callamount = betamount3
@@ -80,6 +80,6 @@ elif Choice3 == "Bet":
   if betamount3 > Cash_player:
     print(f"\nYou can\'t bet more than you have, stupid face.\n{Line*50}")
   if betamount3 <= Cash_player:
-    print(f"{Newline*10}{Line*50}\nMaster's hand:{Master}\nCash: {Cash_master}$\n\n\nPot: {Pot}             {Flop}  {Turn}   {River}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
+    print(f"{Newline*10}{Line*50}\nMaster's hand:{Master}\nCash: {Cash_master}$\n\n\nPot: {Pot}         {Flop}  {Turn}   {River}\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
 else:
   print("Check your spelling")
