@@ -37,7 +37,7 @@ for turnrivercards in range(1):
 #Gameplay formula
 def poker_game(Cash_player = 10000, Cash_master = 10000, Pot = 0):
 
-  Table1 = (f"{Newline*10}{Line*50}\nMaster's hand:\nCash: {Cash_master}$\n\n\nPot: {Pot}{Space*10}")
+  Table1 = (f"{Newline*10}{Line*50}\nMaster's cash: {Cash_master}$\n\n\nPot: {Pot}{Space*10}")
   Table2 = (f"\n\n\n{name}\'s hand: {myhand} \nCash: {Cash_player}$\n{Star*50}\n")
   BasicTable = (f"{Table1}{Table2}")
   FlopTable = (f"{Table1}{Flop}{Table2}")
@@ -65,5 +65,7 @@ def poker_game(Cash_player = 10000, Cash_master = 10000, Pot = 0):
       Pot = betamount + betamount
       continue
     elif Choice == "Fold":
+      print(RiverTable)
       break
+  print(f"Master\'s hand: {Master}")
 poker_game()
